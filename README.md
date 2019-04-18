@@ -13,7 +13,7 @@ If the center of the cyan targeting rectangle is close enough to the center of t
 ## How to run
 
 ### Run code
-1) Open libIAT_MST_SCD_Master.py
+1) Open ImageTracking_MST_SCD_Master.py
 2) Press F5   or the play button on the top  of the screen.
 3) To end the program, press "Esc" key
 
