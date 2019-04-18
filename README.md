@@ -2,43 +2,20 @@
 Here shown is an (MST)  solution for tracking images. This is useful for low quality images of a discinct intensity/texture/color.
 
 
- 
-4
-# MST: Mean Shift Tracking
-5
-Simulation environment of the Model Predictive Contouring Controller (MPCC) for Autonomous Racing developed by the Automatic Control Lab (IfA) at ETH Zurich
-6
-​
-7
-​
-8
+ # Note
+This MST Algorithm identifies objects which are distinguishable due to textutre, and/or intensity. The code draws a rectangular patch about target images and as the target image pans in the camera view, the MST target rectangle follows the target image. 
+
+If the code is looking at a flat gradient image (sky, wall, etc...) a search box will grow in size to select bigger or lower resolution target images. Of the objects detected, the one the closest to the center of the camera will be highlighted cyan.
+
+If the center of the cyan targeting rectangle is close enough to the center of the camera for a duration of time, the MST tracker will turn on and only that target image will be highlighted in the image. To stop tracking a target image, aim the ccamera at a flat intensity image, like a dark room, wall, or place your hand blocking the camera from receiving light.
+
+
 ## How to run
-9
-​
-10
-### Before running code
-11
-1) Install ...
-12
-2) Use quadprog, "MPC_vars.interface = 'quadprog';" Note: use of Quadprog yeilds more accurate solution than my QP solver.
-13
+
 ### Run code
-14
-1) run simulation.m
-15
-2) play with the tunning in getMPC_vars.m
-16
-3) change the car model between FullSize and ORCA
-17
-4) change the track layout between the ORCA and the RCP track
-18
-​
-19
+1) Open libIAT_MST_SCD_Master.py
+2) Press F5   or the play button on the top  of the screen.
+3) To end the program, press "Esc" key
+
 ## Example
-20
 <img src="https://github.com/alexliniger/MPCC/blob/master/Images/MPC_sim.gif" width="700" />
-21
-​
-
-
-
