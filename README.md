@@ -18,4 +18,4 @@ If the center of the cyan targeting rectangle is close enough to the center of t
 3) To end the program, press "Esc" key
 
 ## Example
-<img src="https://github.com/alexliniger/MPCC/blob/master/Images/MPC_sim.gif" width="700" />
+<img src="https://github.com/Tac321/Mean-Shift-Tracking-MST-/blob/master/MST_Pic.png" width="700" />
